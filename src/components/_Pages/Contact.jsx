@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 import { Typography, Box } from "@mui/material";
 
 // --- Sx Styles --- //
-import { trans, sxHomeContainer } from "../App/App.sxStyles";
+import { trans } from "../App/App.sxStyles";
 
-function Home() {
+function Contact() {
   return (
     <motion.div
       initial={trans.initial}
@@ -20,23 +20,19 @@ function Home() {
       transition={trans.time}
     >
       <Helmet>
-        <title>Eric Meinzer | Home</title>
+        <title>Eric Meinzer | Contact</title>
         <meta
           name="description"
-          content="general information about eric meinzer and a website to view his work."
+          content="contact, email, social media, message, text"
         />
-        <meta name="keywords" content="personal website, " />
+        <meta name="keywords" content="contact, " />
         <meta name="author" content="ericmeinzer.com, eric, meinzer" />
       </Helmet>
 
-      <Box id="HomeContainer" sx={sxHomeContainer}>
-        <Typography variant="h1">Welcome!</Typography>
-        <Typography variant="h2">
-          A jack of all trades is a master of none, but oftentimes better than a
-          master of one.
-        </Typography>
-      </Box>
+      <Typography variant="h1">
+        Contact Page
+      </Typography>
     </motion.div>
   );
 }
-export default Home;
+export default Contact;

@@ -11,6 +11,8 @@ import {
 
 // --- Components --- //
 import Home from '../_Pages/Home';
+import Contact from '../_Pages/Contact';
+import Nav from '../Nav/Nav';
 
 // --- MUI --- //
 import { Box } from "@mui/material";
@@ -49,10 +51,11 @@ function App() {
                 style={transApp.style}
                 transition={transApp.time}
               >
-                {/* <Nav /> */}
+                <Nav />
                 <Routes>
                   <Route path="/" element={<Navigate to="/home" />} />
                   <Route path="/home" element={<Home />} />
+                  <Route path="/contact" element={<Contact />} />
                 </Routes>
               </motion.div>
             </AnimatePresence>

@@ -55,15 +55,86 @@ export const theme = createTheme({
   },
 });
 
+// [theme.breakpoints.down("xl")]: {
+//     fontSize: "2.25rem",
+//   },
+//   [theme.breakpoints.down("lg")]: {
+//     fontSize: "2rem",
+//   },
+//   [theme.breakpoints.down("md")]: {
+//     fontSize: "1.75rem",
+//   },
+//   [theme.breakpoints.down("sm")]: {
+//     fontSize: "1.5rem",
+//   },
+
 export const sxApp = {
-  border: "1px solid red",
-  bgcolor: "secondary.main",
+//   border: "1px solid red",
+//   bgcolor: "secondary.main",
   minHeight: "100vh",
   m: 0,
-  p: 2,
+  p: 0,
 };
 
 export const sxAppContainer = {
-  border: "1px solid blue",
+//   border: "1px solid blue",
+//   mx: 2,
 
 };
+// ----- App ----- //
+// ----- App ----- //
+// ----- App ----- //
+
+// ----- Home ----- //
+// ----- Home ----- //
+// ----- Home ----- //
+export const sxHomeContainer = {
+    border: '1px solid red',
+    mx: '10vw',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '200vh',
+
+}
+// ----- Home ----- //
+// ----- Home ----- //
+// ----- Home ----- //
+
+// ----- Nav ----- //
+// ----- Nav ----- //
+// ----- Nav ----- //
+export const sxNavContainer = {
+    // border: '1px solid blue',
+    display: "flex",
+    flexDirection: 'column',
+    position: 'sticky',
+    top: 0,
+    width: '100vw',
+    gap: 20,
+}
+
+export const sxNavContent = {
+    // border: '1px solid green',
+    p: '2vw',
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    bgcolor: "info.light",
+    boxShadow: 3,
+    zIndex: 1000,
+
+}
+
+export const sxNavText = {
+    // color: "secondary.main",
+    cursor: "pointer",
+    "&:hover": {
+      color: "primary.light",
+      transform: "scale(1.05)",
+    },
+}
+// ----- Nav ----- //
+// ----- Nav ----- //
+// ----- Nav ----- //

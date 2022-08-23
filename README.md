@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Eric Meinzer
+My personal website featuring some of the work I've created from 2007 - today.
 
 ## Available Scripts
 
