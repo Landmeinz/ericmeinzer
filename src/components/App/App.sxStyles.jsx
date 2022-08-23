@@ -69,35 +69,67 @@ export const theme = createTheme({
 //   },
 
 export const sxApp = {
-//   border: "1px solid red",
-//   bgcolor: "secondary.main",
+  //   border: "1px solid red",
+  //   bgcolor: "secondary.main",
   minHeight: "100vh",
   m: 0,
   p: 0,
 };
 
 export const sxAppContainer = {
-//   border: "1px solid blue",
-//   mx: 2,
-
+  // border: "1px solid blue",
+  //   mx: 2,
 };
 // ----- App ----- //
 // ----- App ----- //
 // ----- App ----- //
 
+// ----- Contact ----- //
+// ----- Contact ----- //
+// ----- Contact ----- //
+export const sxContactContainer = {
+  //   border: "1px solid red",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: "5vh",
+  mx: "10vw",
+  mt: "20vh",
+};
+
+export const sxContactContent = {
+  // border: "1px solid red",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+};
+// ----- Contact ----- //
+// ----- Contact ----- //
+// ----- Contact ----- //
+
 // ----- Home ----- //
 // ----- Home ----- //
 // ----- Home ----- //
 export const sxHomeContainer = {
-    border: '1px solid red',
-    mx: '10vw',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '200vh',
+  //   border: "1px solid red",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: "5vh",
+  mx: "10vw",
+  mt: "20vh",
+};
 
-}
+export const sxJackTextContainer = {
+  // border: "1px solid red",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+};
 // ----- Home ----- //
 // ----- Home ----- //
 // ----- Home ----- //
@@ -106,35 +138,35 @@ export const sxHomeContainer = {
 // ----- Nav ----- //
 // ----- Nav ----- //
 export const sxNavContainer = {
-    // border: '1px solid blue',
-    display: "flex",
-    flexDirection: 'column',
-    position: 'sticky',
-    top: 0,
-    width: '100vw',
-    gap: 20,
-}
+  // border: '1px solid blue',
+  display: "flex",
+  flexDirection: "column",
+  position: "sticky",
+  top: 0,
+  width: "100vw",
+};
 
 export const sxNavContent = {
-    // border: '1px solid green',
-    p: '2vw',
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    bgcolor: "info.light",
-    boxShadow: 3,
-    zIndex: 1000,
-
-}
+  // border: '1px solid green',
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  py: "2vh",
+  px: "2vw",
+  bgcolor: "info.light",
+  boxShadow: 3,
+  zIndex: 1000,
+};
 
 export const sxNavText = {
-    // color: "secondary.main",
-    cursor: "pointer",
-    "&:hover": {
-      color: "primary.light",
-      transform: "scale(1.05)",
-    },
-}
+  // color: "secondary.main",
+  cursor: "pointer",
+
+  "&:hover": {
+    color: "primary.light",
+    transform: "scale(1.05)",
+  },
+};
 // ----- Nav ----- //
 // ----- Nav ----- //
 // ----- Nav ----- //

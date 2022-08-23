@@ -8,7 +8,11 @@ import { motion } from "framer-motion";
 import { Typography, Box } from "@mui/material";
 
 // --- Sx Styles --- //
-import { trans } from "../App/App.sxStyles";
+import {
+  trans,
+  sxContactContainer,
+  sxContactContent,
+} from "../App/App.sxStyles";
 
 function Contact() {
   return (
@@ -29,9 +33,24 @@ function Contact() {
         <meta name="author" content="ericmeinzer.com, eric, meinzer" />
       </Helmet>
 
-      <Typography variant="h1">
-        Contact Page
-      </Typography>
+      <Box id="Contactontainer" sx={sxContactContainer}>
+        <Typography variant="h1">Contact Page!</Typography>
+        <Box id="ContactContent" sx={sxContactContent}>
+          <Typography variant="h3">Contact</Typography>
+          <Typography variant="h3">Fax Number</Typography>
+        </Box>
+        <Typography>
+          Living life in between the physical and the digital world, my name is
+          Eric Meinzer and I like to design and build things.
+        </Typography>
+        <Typography>
+          My current focus is on software engineering, designing and developing
+          fluid digital products.{" "}
+        </Typography>
+        <Typography>
+          Thanks for stopping by! 👇 connect with me on LinkedIn or GitHub 👇
+        </Typography>
+      </Box>
     </motion.div>
   );
 }
