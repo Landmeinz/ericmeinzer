@@ -158,9 +158,20 @@ export const sxNavContent = {
   zIndex: 1000,
 };
 
+export const sxNameContainer = {
+    // border: '1px solid red',
+    display: "flex",
+    flexDirection: 'row',
+    justifyContent: "center",
+    alignItems: "baseline",
+    gap: '2vh',
+}
+
 export const sxNavText = {
   // color: "secondary.main",
   cursor: "pointer",
+  p: 0,
+  m: 0,
 
   "&:hover": {
     color: "primary.light",

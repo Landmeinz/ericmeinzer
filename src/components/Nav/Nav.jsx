@@ -12,7 +12,9 @@ import {
   trans,
   sxNavContainer,
   sxNavContent,
+  sxNameContainer,
   sxNavText,
+  sxNavSubText,
 } from "../App/App.sxStyles";
 
 function Nav() {
@@ -33,6 +35,7 @@ function Nav() {
         transition={trans.time}
       >
         <Box id="NavContent" sx={sxNavContent}>
+          <Box sx={sxNameContainer}>
             <Typography
               id="NavTextEricMeinzer"
               sx={sxNavText}
@@ -41,15 +44,19 @@ function Nav() {
             >
               Eric Meinzer
             </Typography>
-
-            <Typography
-              id="NavTextContact"
-              sx={sxNavText}
-              variant="h5"
-              onClick={() => handleNav("/contact")}
-            >
-              Contact
+            <Typography id="NavTextDesignerDev" variant="body1">
+              Designer | Developer
             </Typography>
+          </Box>
+
+          <Typography
+            id="NavTextContact"
+            sx={sxNavText}
+            variant="h5"
+            onClick={() => handleNav("/contact")}
+          >
+            Contact
+          </Typography>
         </Box>
       </motion.div>
     </Box>
