@@ -9,17 +9,25 @@ import {
   Navigate,
 } from "react-router-dom";
 
+// --- Parallax --- //
+
 // --- Components --- //
-import Home from '../_Pages/Home';
-import Contact from '../_Pages/Contact';
-import Nav from '../Nav/Nav';
+import Home from "../_Pages/Home";
+import Contact from "../_Pages/Contact";
+import Nav from "../Nav/Nav";
 
 // --- MUI --- //
-import { Box } from "@mui/material";
+import { Box, CardMedia } from "@mui/material";
 
 // --- Sx Styles --- //
-import { theme, transApp, sxApp, sxAppContainer } from "../App/App.sxStyles";
-import './App.css';
+import {
+  theme,
+  transApp,
+  sxApp,
+  sxAppContainer,
+  sxBackgroundImage,
+} from "./App.sxStyles";
+import "./App.css";
 
 function App() {
   return (

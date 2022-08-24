@@ -52,7 +52,7 @@ function Nav() {
           <Typography
             id="NavTextContact"
             sx={sxNavText}
-            variant="h5"
+            variant="h6"
             onClick={() => handleNav("/contact")}
           >
             Contact

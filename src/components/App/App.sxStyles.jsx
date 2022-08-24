@@ -72,13 +72,31 @@ export const sxApp = {
   //   border: "1px solid red",
   //   bgcolor: "secondary.main",
   minHeight: "100vh",
+  //   hight: '500vh',
+  //   width: '500vw',
   m: 0,
   p: 0,
 };
 
 export const sxAppContainer = {
-  // border: "1px solid blue",
+    border: "1px solid blue",
   //   mx: 2,
+  //   backgroundImage: `url("/images/background/background.png")`,
+//   objectFit: "contain",
+    // height: '200vh',
+  //   width: '100vw',
+  //   width: '5000vw',
+  minHeight: '100vh',
+
+};
+
+export const sxBackgroundImage = {
+  // border: '1px solid blue',
+//   position: 'sticky',
+  // backgroundPosition: 'center',
+//   objectFit: 'contain',
+  // overflowY: 'auto',
+  zIndex: 1,
 };
 // ----- App ----- //
 // ----- App ----- //
@@ -113,14 +131,17 @@ export const sxContactContent = {
 // ----- Home ----- //
 // ----- Home ----- //
 export const sxHomeContainer = {
-  //   border: "1px solid red",
+  // border: "1px solid red",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
+  zIndex: 0,
   gap: "5vh",
   mx: "10vw",
   mt: "20vh",
+
+
 };
 
 export const sxJackTextContainer = {
@@ -141,13 +162,13 @@ export const sxNavContainer = {
   // border: '1px solid blue',
   display: "flex",
   flexDirection: "column",
-  position: "sticky",
-  top: 0,
+  position: "fixed",
   width: "100vw",
+  top: 0,
 };
 
 export const sxNavContent = {
-  // border: '1px solid green',
+  //   border: '1px solid green',
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
@@ -155,17 +176,17 @@ export const sxNavContent = {
   px: "2vw",
   bgcolor: "info.light",
   boxShadow: 3,
-  zIndex: 1000,
+  zIndex: 5000,
 };
 
 export const sxNameContainer = {
-    // border: '1px solid red',
-    display: "flex",
-    flexDirection: 'row',
-    justifyContent: "center",
-    alignItems: "baseline",
-    gap: '2vh',
-}
+  // border: '1px solid red',
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  alignItems: "baseline",
+  gap: "2vh",
+};
 
 export const sxNavText = {
   // color: "secondary.main",
