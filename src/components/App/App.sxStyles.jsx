@@ -114,6 +114,7 @@ export const sxContactContainer = {
   gap: "5vh",
   mx: "10vw",
   mt: "20vh",
+  color: "info.light",
 };
 
 export const sxContactContent = {
@@ -150,7 +151,17 @@ export const sxJackTextContainer = {
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
+  gap: 2,
 };
+
+export const sxHistoryTextContainer = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 2,
+    // color: "info.light",
+}
 // ----- Home ----- //
 // ----- Home ----- //
 // ----- Home ----- //
@@ -159,12 +170,13 @@ export const sxJackTextContainer = {
 // ----- Nav ----- //
 // ----- Nav ----- //
 export const sxNavContainer = {
-  // border: '1px solid blue',
+//   border: '1px solid blue',
   display: "flex",
   flexDirection: "column",
   position: "fixed",
   width: "100vw",
   top: 0,
+  zIndex: 5000,
 };
 
 export const sxNavContent = {
@@ -172,10 +184,12 @@ export const sxNavContent = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
+  mt: "2vh",
   py: "2vh",
   px: "2vw",
   bgcolor: "info.light",
   boxShadow: 3,
+  borderRadius: 2,
   zIndex: 5000,
 };
 

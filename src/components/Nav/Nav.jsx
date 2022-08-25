@@ -45,7 +45,7 @@ function Nav() {
               Eric Meinzer
             </Typography>
             <Typography id="NavTextDesignerDev" variant="body1">
-              Designer | Developer
+              Creative Guy
             </Typography>
           </Box>
 
