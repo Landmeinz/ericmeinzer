@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.10.2",
     "@mui/material": "^5.10.2",
     "@react-spring/parallax": "^9.5.2",
     "@testing-library/jest-dom": "^5.16.5",
@@ -12,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate-presence": "^0.2.1",
     "framer-motion": "^7.2.1",
+    "material-icons": "^1.11.10",
     "mui": "^0.0.1",
     "mui-theme": "^0.1.4",
     "react": "^18.2.0",
@@ -19,7 +21,7 @@
     "react-helmet": "^6.1.0",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-spring": "^9.5.2",
     "web-vitals": "^2.1.4"
   },

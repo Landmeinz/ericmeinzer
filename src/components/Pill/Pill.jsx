@@ -2,9 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-// --- Parallax --- //
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-
 // --- Components --- //
 
 // --- MUI --- //
@@ -12,10 +9,6 @@ import { Typography, Box } from "@mui/material";
 
 // --- Sx Styles --- //
 import {
-  trans,
-  sxContactContainer,
-  sxContactContent,
-  theme,
   sxPillContent,
 
 } from "../App/App.sxStyles";

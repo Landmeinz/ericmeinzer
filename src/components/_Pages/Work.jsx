@@ -34,6 +34,7 @@ function Home() {
       </Helmet>
 
       <Box id="WorkContainer" sx={sxWorkContainer}>
+        <Typography variant="h4">Software Developer</Typography>
         <Typography variant="h4">Lighting Design</Typography>
         <Typography variant="h4">Rendering</Typography>
         <Typography variant="h4">Graphic Design</Typography>

@@ -107,14 +107,24 @@ export const sxBackgroundImage = {
 // ----- Contact ----- //
 // ----- Contact ----- //
 export const sxContactContainer = {
-  //   border: "1px solid red",
+  // border: "1px solid red",
+  display: "flex",
+  flexDirection: "column",
+  position: "relative",
+  justifyContent: "space-between",
+  // alignItems: "space-between",
+  // gap: "30vh",
+  height: "1500px",
+  mx: "10vw",
+  pt: "40vh",
+};
+
+export const sxContactHeader = {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
   gap: "5vh",
-  mx: "10vw",
-  pt: "40vh",
 };
 
 export const sxContactContent = {
@@ -127,11 +137,30 @@ export const sxContactContent = {
 };
 
 export const sxContactSubText = {
+  // border: "1px solid blue",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
   gap: "2vh",
+  // position: "absolute",
+  // bottom: 0,
+  color: "info.light",
+};
+
+export const sxIcon = {
+  // border: "1px solid blue",
+  cursor: "pointer",
+  width: "3rem",
+  height: "3rem",
+  p: ".4rem",
+  borderRadius: "50%",
+
+  "&:hover": {
+    color: "primary.main",
+    transform: "scale(1.05)",
+    boxShadow: 3,
+  },
 };
 // ----- Contact ----- //
 // ----- Contact ----- //
@@ -192,7 +221,7 @@ export const sxJackTextContainer = {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  alignItems: "center",
+  // alignItems: "center",
   gap: 2,
 };
 
@@ -362,7 +391,7 @@ export const sxPillContent = {
   textAlign: "center",
   bgcolor: "info.light",
   boxShadow: 6,
-  
+  color: "info.dark",
 
   "&:hover": {
     color: "primary.main",
@@ -394,8 +423,7 @@ export const sxEmojiContainer = {
 export const sxWorkContainer = {
   border: "1px solid blue",
   pt: "40vh",
-
-}
+};
 // ----- Work ----- //
 // ----- Work ----- //
 // ----- Work ----- //

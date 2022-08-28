@@ -76,6 +76,7 @@ function Home() {
             Designing & Developing Software
           </Typography>
           <Typography variant="h4">as a Full Stack Developer</Typography>
+          <Pill text={"View My Work"} />
         </Box>
       </Box>
     </motion.div>
