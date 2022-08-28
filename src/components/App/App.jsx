@@ -9,12 +9,12 @@ import {
   Navigate,
 } from "react-router-dom";
 
-// --- Parallax --- //
-
 // --- Components --- //
 import Home from "../_Pages/Home";
 import Contact from "../_Pages/Contact";
 import Nav from "../Nav/Nav";
+import Footer from "../Footer/Footer";
+import Work from "../_Pages/Work";
 
 // --- MUI --- //
 import { Box, CardMedia } from "@mui/material";
@@ -63,13 +63,14 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Navigate to="/home" />} />
                   <Route path="/home" element={<Home />} />
+                  <Route path="/work" element={<Work />} />
                   <Route path="/contact" element={<Contact />} />
                 </Routes>
+                <Footer />
               </motion.div>
             </AnimatePresence>
           </Router>
         </Box>
-        {/* <Footer /> */}
       </Box>
     </ThemeProvider>
   );
