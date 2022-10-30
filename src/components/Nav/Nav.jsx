@@ -20,6 +20,7 @@ import {
   sxNavText,
   sxNavSubText,
   sxNavTextCreative,
+  sxWorkContactContainer,
 } from "../App/App.sxStyles";
 
 function Nav() {
@@ -35,7 +36,8 @@ function Nav() {
   } // handleNav
 
   const addEmoji = () => {
-    const emoji = possibleEmojis[Math.floor(Math.random() * possibleEmojis.length)];
+    const emoji =
+      possibleEmojis[Math.floor(Math.random() * possibleEmojis.length)];
     emojiList.push(emoji);
     setEmojiList([...emojiList]);
   }; // addEmoji
@@ -62,7 +64,7 @@ function Nav() {
             <Typography
               id="NavTextCreative"
               sx={sxNavTextCreative}
-              variant="body1"
+              variant="body2"
               onClick={addEmoji}
             >
               Creative Guy
@@ -70,14 +72,24 @@ function Nav() {
             <RandomEmoji emojiList={emojiList} />
           </Box>
 
-          <Typography
-            id="NavTextContact"
-            sx={sxNavText}
-            variant="body1"
-            onClick={() => handleNav("/contact")}
-          >
-            Contact
-          </Typography>
+          <Box id="WorkContactContainer" sx={sxWorkContactContainer}>
+            <Typography
+              id="NavTextContact"
+              sx={sxNavText}
+              variant="h5"
+              onClick={() => handleNav("/work")}
+            >
+              Work
+            </Typography>
+            <Typography
+              id="NavTextContact"
+              sx={sxNavText}
+              variant="h5"
+              onClick={() => handleNav("/contact")}
+            >
+              Contact
+            </Typography>
+          </Box>
         </Box>
       </motion.div>
     </Box>

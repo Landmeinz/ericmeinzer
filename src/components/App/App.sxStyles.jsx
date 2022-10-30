@@ -114,7 +114,7 @@ export const sxContactContainer = {
   justifyContent: "space-between",
   // alignItems: "space-between",
   // gap: "30vh",
-  height: "1500px",
+  height: "1400px",
   mx: "10vw",
   pt: "40vh",
 };
@@ -146,6 +146,8 @@ export const sxContactSubText = {
   // position: "absolute",
   // bottom: 0,
   color: "info.light",
+  textAlign: "center",
+
 };
 
 export const sxIcon = {
@@ -198,7 +200,7 @@ export const sxHomeContainer = {
   justifyContent: "center",
   alignItems: "center",
   zIndex: 0,
-  gap: "50vh",
+  gap: "60vh",
   mx: "10vw",
   pt: "40vh",
 
@@ -317,6 +319,27 @@ export const sxNameContainer = {
   },
 };
 
+export const sxWorkContactContainer = {
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  alignItems: "baseline",
+  gap: "2vh",
+
+  [theme.breakpoints.down("xl")]: {
+    gap: "2vh",
+  },
+  [theme.breakpoints.down("lg")]: {
+    gap: "2vh",
+  },
+  [theme.breakpoints.down("md")]: {
+    gap: "1vh",
+  },
+  [theme.breakpoints.down("sm")]: {
+    gap: "1vh",
+  },
+}
+
 export const sxNavText = {
   // color: "secondary.main",
   cursor: "pointer",
@@ -331,16 +354,16 @@ export const sxNavText = {
   },
 
   [theme.breakpoints.down("xl")]: {
-    fontSize: "1.25rem",
+    fontSize: "1.1rem",
   },
   [theme.breakpoints.down("lg")]: {
-    fontSize: "1.25rem",
+    fontSize: "1.1rem",
   },
   [theme.breakpoints.down("md")]: {
-    fontSize: "1.25rem",
+    fontSize: "1.1rem",
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "1.1rem",
+    fontSize: "1rem",
   },
 };
 

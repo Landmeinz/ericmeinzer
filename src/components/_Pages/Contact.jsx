@@ -23,7 +23,6 @@ import {
   sxContactSubText,
   sxIcon,
   sxContactHeader,
-
 } from "../App/App.sxStyles";
 
 function Contact() {
@@ -71,26 +70,21 @@ function Contact() {
         </Box>
 
         <Box sx={sxContactSubText}>
-        <Typography sx={sxHomeHeroText} variant="h1">
-            TLDR
+          <Typography sx={sxHomeHeroText} variant="h1">
+            tldr
+          </Typography>
+
+          <Typography variant="h6">Minneapolis livin</Typography>
+
+          <Typography variant="h6">Designer and builder of things</Typography>
+
+          <Typography variant="h6">
+            Living life between the physical and the digital world
           </Typography>
 
           <Typography variant="h6">
-            Minneapolis livin
+            I have a vast set of skills and enjoy taking on creative challenges
           </Typography>
-
-          <Typography variant="h6">
-            I like to design and build things
-          </Typography>
-
-          <Typography variant="h6">
-            Living life in between the physical and the digital world
-          </Typography>
-
-          <Typography variant="h6">
-            I'm pretty good at a lot of things and like to take on challenges
-          </Typography>
-
         </Box>
       </Box>
     </motion.div>
