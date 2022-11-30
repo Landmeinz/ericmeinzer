@@ -27,19 +27,19 @@ function Home() {
         <title>Eric Meinzer | Work</title>
         <meta
           name="description"
-          content="selected work eric meinzer has worked on."
+          content="selected work eric meinzer has worked on or created."
         />
-        <meta name="keywords" content="portfolio, work, photo, gallery " />
+        <meta name="keywords" content="portfolio, work, photo, gallery" />
         <meta name="author" content="ericmeinzer.com, eric, meinzer" />
       </Helmet>
 
       <Box id="WorkContainer" sx={sxWorkContainer}>
-        <Typography variant="h4">Software Developer</Typography>
+        <Typography variant="h4">Software Development</Typography>
         <Typography variant="h4">Lighting Design</Typography>
-        <Typography variant="h4">Rendering</Typography>
+        <Typography variant="h4">Renderings</Typography>
         <Typography variant="h4">Graphic Design</Typography>
         <Typography variant="h4">Product Design</Typography>
-        <Typography variant="h4">UnderGrad Architecture Portfolio</Typography>
+        <Typography variant="h4">Under Graduate Architecture Portfolio</Typography>
       </Box>
     </motion.div>
   );

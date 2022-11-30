@@ -16,7 +16,10 @@ import {
   theme,
   trans,
   sxHomeContainer,
+  sxHomeHeadshot,
   sxJackTextContainer,
+  sxImageAndDesignerText,
+  sxDesignerDeveloperText,
   sxBackgroundImage,
   sxHistoryTextContainer,
   sxPillContainer,
@@ -47,9 +50,24 @@ function Home() {
 
       <Box id="HomeContainer" sx={sxHomeContainer}>
         <Box id="JackTextContainer" sx={sxJackTextContainer}>
+          <Box sx={sxImageAndDesignerText}>
+          <CardMedia
+            sx={sxHomeHeadshot}
+            component="img"
+            alt="A Nice Headshot Photo of Eric"
+            image="/images/EM.jpg"
+          />
+          <Box sx={sxDesignerDeveloperText}>
           <Typography sx={sxHomeHeroText} variant="h1">
-            Designer & Developer
+            Designer &
           </Typography>
+          <Typography sx={sxHomeHeroText} variant="h1">
+            Developer
+          </Typography>
+          </Box>
+       
+          </Box>
+       
           <Typography sx={sxH3} variant="h3">
             they say a jack of all trades is a master of none
           </Typography>
@@ -61,13 +79,14 @@ function Home() {
         {/* --- pill layers ---*/}
         <Box sx={sxPillContainer}>
           <Typography sx={sxH3} variant="h3">
-            I've done a lot of things over the years
+            I've done a lot of different things over the years
           </Typography>
           <Box sx={sxPillContainerText}>
             <Pill text={"Lighting Design"} />
-            <Pill text={"3D Modeling & Rendering"} />
-            <Pill text={"Architectural Drafting"} />
+            <Pill text={"Rendering"} />
             <Pill text={"Graphic Design"} />
+            <Pill text={"Product Design"} />
+            <Pill text={"Architecture"} />
           </Box>
         </Box>
 

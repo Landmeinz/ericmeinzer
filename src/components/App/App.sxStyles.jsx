@@ -202,7 +202,7 @@ export const sxHomeContainer = {
   zIndex: 0,
   gap: "60vh",
   mx: "10vw",
-  pt: "40vh",
+  pt: "20vh",
 
   [theme.breakpoints.down("xl")]: {
     mx: "10vw",
@@ -218,6 +218,15 @@ export const sxHomeContainer = {
   },
 };
 
+export const sxHomeHeadshot = {
+  borderRadius: "50%",
+  height: '280px',
+  width: '280px',
+  display: "flex",
+  alignItems: "center",
+
+}
+
 export const sxJackTextContainer = {
   // border: "1px solid red",
   display: "flex",
@@ -226,6 +235,22 @@ export const sxJackTextContainer = {
   // alignItems: "center",
   gap: 2,
 };
+
+export const sxImageAndDesignerText = {
+    // border: "1px solid red",
+    display: "flex",
+    flexDirection: "row",
+    // justifyContent: "center",
+    gap: 8,
+}
+
+export const sxDesignerDeveloperText = {
+  // border: "1px solid blue",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  gap: 1,
+}
 
 export const sxDoingNowContainer = {
   color: "info.light",
@@ -446,6 +471,11 @@ export const sxEmojiContainer = {
 export const sxWorkContainer = {
   border: "1px solid blue",
   pt: "40vh",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  gap: 2,
+
 };
 // ----- Work ----- //
 // ----- Work ----- //

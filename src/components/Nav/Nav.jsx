@@ -25,7 +25,6 @@ import {
 
 function Nav() {
   const navigate = useNavigate();
-
   const [emojiList, setEmojiList] = useState([]);
 
   useEffect(() => {}, []); //No dependency to trigger in each page load
@@ -36,9 +35,14 @@ function Nav() {
   } // handleNav
 
   const addEmoji = () => {
-    const emoji =
-      possibleEmojis[Math.floor(Math.random() * possibleEmojis.length)];
-    emojiList.push(emoji);
+    const emoji = possibleEmojis[Math.floor(Math.random() * possibleEmojis.length)];
+    if (emojiList.length > 14) {
+      emojiList.pop(emojiList.length);
+      emojiList.unshift(emoji);
+    }
+    else{
+      emojiList.unshift(emoji);
+    }
     setEmojiList([...emojiList]);
   }; // addEmoji
 

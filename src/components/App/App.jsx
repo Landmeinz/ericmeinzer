@@ -37,15 +37,15 @@ function App() {
           <title>Eric Meinzer</title>
           <meta
             name="description"
-            content="general information and mission statement of the tinker.group along with a gallery of work."
+            content="eric meinzer, work, products, architecture, graphic design, product design, developer, react, c#, rendering"
           />
           <meta
             name="keywords"
-            content="tinker together, tinker.group, welcome"
+            content="eric meinzer, work, products, architecture, graphic design, product design, developer, react, c#, rendering"
           />
           <meta
             name="author"
-            content="tinker.group, Eric Meinzer, Chris Benner, Adam Donner"
+            content="eric, meinzer, landmeinz"
           />
         </Helmet>
 
@@ -61,7 +61,7 @@ function App() {
               >
                 <Nav />
                 <Routes>
-                  <Route path="/" element={<Navigate to="/home" />} />
+                  <Route path='*' exact={true}  element={<Navigate to="/home" />} />
                   <Route path="/home" element={<Home />} />
                   <Route path="/work" element={<Work />} />
                   <Route path="/contact" element={<Contact />} />
