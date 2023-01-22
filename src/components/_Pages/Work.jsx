@@ -7,14 +7,36 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 // --- Components --- //
 import Pill from "../Pill/Pill";
+import Project from "../Project/Project";
+import WorkDescription from "../WorkDescription/WorkDescription";
+import Featured from "../Featured/Featured";
 
 // --- MUI --- //
 import { Typography, Box, CardMedia } from "@mui/material";
 
+// --- Content --- //
+import {
+  projects,
+  workPage,
+  featured,
+  projectSection,
+
+  // other,
+} from "../../content/Projects";
+
 // --- Sx Styles --- //
-import { theme, trans, sxWorkContainer, sxH3 } from "../App/App.sxStyles";
+import {
+  theme,
+  trans,
+  sxWorkContainer,
+  sxH3,
+  sxCardProjectGallery,
+  sxProjectDescription,
+
+} from "../App/App.sxStyles";
 
 function Home() {
+
   return (
     <motion.div
       initial={trans.initial}
@@ -33,13 +55,29 @@ function Home() {
         <meta name="author" content="ericmeinzer.com, eric, meinzer" />
       </Helmet>
 
-      <Box id="WorkContainer" sx={sxWorkContainer}>
-        <Typography variant="h4">Software Development</Typography>
+      <Box id="workContainer" sx={sxWorkContainer}>
+        {/* <Typography variant="h4">Software Development</Typography>
         <Typography variant="h4">Lighting Design</Typography>
         <Typography variant="h4">Renderings</Typography>
         <Typography variant="h4">Graphic Design</Typography>
         <Typography variant="h4">Product Design</Typography>
-        <Typography variant="h4">Under Graduate Architecture Portfolio</Typography>
+        <Typography variant="h4">Under Graduate Architecture Portfolio</Typography> */}
+        <WorkDescription
+          id="workDescription"
+          title={workPage.title}
+          body={workPage.body}
+          details={workPage.details}
+        />
+        <Featured featured={featured} />
+
+        <WorkDescription
+          id="projectDescription"
+          title={projectSection.title}
+          body={projectSection.body}
+          // details={projectSection.details}
+        />
+        <Project projects={projects} />
+
       </Box>
     </motion.div>
   );

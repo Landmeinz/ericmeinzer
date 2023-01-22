@@ -9,6 +9,8 @@ import {
   Navigate,
 } from "react-router-dom";
 
+import './App.css';
+
 // --- Components --- //
 import Home from "../_Pages/Home";
 import Contact from "../_Pages/Contact";

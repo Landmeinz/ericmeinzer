@@ -27,7 +27,7 @@ export const theme = createTheme({
   palette: {
     primary: {
       main: "hsla(360, 60%, 40%, 1)",
-      //   dark: "hsla(14, 77%, 32%, 1)",
+        dark: "hsla(360, 60%, 18%, 1)",
       //   light: "hsla(14, 77%, 56%, 1)",
     },
     secondary: {
@@ -69,26 +69,31 @@ export const theme = createTheme({
 //   },
 
 export const sxApp = {
-  //   border: "1px solid red",
+  // border: "5px solid red",
   //   bgcolor: "secondary.main",
   minHeight: "100vh",
-  //   hight: '500vh',
-  //   width: '500vw',
+  // hight: "100%",
+  // width: '100%',
   m: 0,
   p: 0,
+  position: "relative",
+  overflow: "hidden ",
+
 };
 
 export const sxAppContainer = {
-  // border: "1px solid blue",
-  backgroundImage: `url("images/background/background.png")`,
-  //   mx: 2,
+  // border: "2px solid blue",
+  // backgroundImage: `url("images/background/background.png")`,
+  bgcolor: "primary.dark",
+  // mb: 20,
   //   objectFit: "contain",
-  height: "2000px",
-  //   width: '100vw',
+  height: "100%",
+  width: '100%',
   //   width: '5000vw',
   minHeight: "100vh",
   zIndex: 1,
   position: "relative",
+  overflow: "hidden ",
 };
 
 export const sxBackgroundImage = {
@@ -98,6 +103,51 @@ export const sxBackgroundImage = {
   //   objectFit: 'contain',
   // overflowY: 'auto',
   zIndex: 1,
+};
+
+export const sxBreaksH4 = {
+  [theme.breakpoints.down("xl")]: {
+    fontSize: "2.25rem",
+  },
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "2rem",
+  },
+  [theme.breakpoints.down("md")]: {
+    fontSize: "1.75rem",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "1.5rem",
+  },
+};
+
+export const sxBreaksH5 = {
+  [theme.breakpoints.down("xl")]: {
+    fontSize: "1.75rem",
+  },
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "1.5rem",
+  },
+  [theme.breakpoints.down("md")]: {
+    fontSize: "1.1rem",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "1.1rem",
+  },
+};
+
+export const sxBreaksH6 = {
+  [theme.breakpoints.down("xl")]: {
+    fontSize: "1.5rem",
+  },
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "1.35rem",
+  },
+  [theme.breakpoints.down("md")]: {
+    fontSize: "1.25rem",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "1.15rem",
+  },
 };
 // ----- App ----- //
 // ----- App ----- //
@@ -117,6 +167,8 @@ export const sxContactContainer = {
   height: "1400px",
   mx: "10vw",
   pt: "40vh",
+  color: "info.light",
+  
 };
 
 export const sxContactHeader = {
@@ -147,6 +199,7 @@ export const sxContactSubText = {
   // bottom: 0,
   color: "info.light",
   textAlign: "center",
+  mb: 10,
 
 };
 
@@ -168,6 +221,161 @@ export const sxIcon = {
 // ----- Contact ----- //
 // ----- Contact ----- //
 
+// ----- Experience ----- //
+// ----- Experience ----- //
+// ----- Experience ----- //
+
+export const sxExperienceContainer = {
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: 4,
+  width: "100%",
+
+};
+
+export const sxExperienceContent = {
+  // border: "1px solid blue",
+  cursor: "pointer",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  borderRadius: "2vw",
+  py: "1.5vh",
+  px: "2.5vh",
+  textAlign: "center",
+  bgcolor: "info.light",
+  boxShadow: 6,
+  color: "info.dark",
+  gap: 1,
+  // width: "50%",
+
+  "&:hover": {
+    color: "primary.main",
+    // transform: "scale(1.05)",
+    boxShadow: 12,
+  },
+};
+
+export const sxImageTextHeader = {
+  // border: "1px solid blue",
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: 2,
+ 
+}
+
+export const sxExpHeaderDetails = {
+  // border: "1px solid green",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "start",
+  justifyContent: "center",
+}
+
+export const sxExperienceDetails = {
+  // border: "1px solid green",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "start",
+  textAlign: "left",
+  gap: 2,
+
+}
+
+export const sxExperienceImage = {
+  borderRadius: "50%",
+  height: '5rem',
+  width: '5rem',
+  display: "flex",
+  alignItems: "center",
+  boxShadow: 2,
+};
+
+export const sxBody1 = {
+  lineHeight: "1.25",
+
+}
+
+// ----- Experience ----- //
+// ----- Experience ----- //
+// ----- Experience ----- //
+
+// ----- Featured ----- //
+// ----- Featured ----- //
+// ----- Featured ----- //
+
+export const sxFeaturedContainer = {
+  // border: '1px solid yellow',
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  // gap: 2,
+  // mt: 10,
+
+
+};
+
+export const sxCardFeaturedGallery = {
+  // border: '1px solid green',
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  alignItems: "center",
+  flexWrap: "wrap",
+  gap: 8,
+  textAlign: "center",
+
+  // borderBottom: 1,
+  // borderColor: "primary.light",
+  // pb: 5,
+  // mx: 8,
+
+  [theme.breakpoints.down("xl")]: {
+    mx: 8,
+  },
+  [theme.breakpoints.down("lg")]: {
+    mx: 8,
+  },
+  [theme.breakpoints.down("md")]: {
+    mx: 5,
+  },
+  [theme.breakpoints.down("sm")]: {
+    mx: 3,
+  },
+}
+
+export const sxFeaturedImage = {
+  // border: '2px solid blue',
+  cursor: "pointer",
+  objectFit: "cover",
+  boxShadow: 6,
+  mb: 2,
+  borderRadius: "50%",
+  width: "200px",
+  height: "200px",
+
+  // display: "flex",
+  // flexDirection: "row",
+  // justifyContent: "center",
+  // flexWrap: "wrap",
+  // width: "50%",
+  // height: "50%",
+
+  "&:hover": {
+    transform: "scale(1.05)",
+  },
+}
+
+// ----- Featured ----- //
+// ----- Featured ----- //
+// ----- Featured ----- //
+
 // ----- Footer ----- //
 // ----- Footer ----- //
 // ----- Footer ----- //
@@ -178,13 +386,14 @@ export const sxFooter = {
   justifyContent: "center",
   textAlign: "center",
   py: ".5vh",
-  borderTopLeftRadius: "1vh",
-  borderTopRightRadius: "1vh",
+  // borderTopLeftRadius: "1vh",
+  // borderTopRightRadius: "1vh",
   zIndex: 50,
   position: "absolute",
   bottom: 0,
   width: "100%",
-  bgcolor: "info.light",
+  color: "info.light",
+  // bgcolor: "info.light",
 };
 // ----- Footer ----- //
 // ----- Footer ----- //
@@ -200,9 +409,9 @@ export const sxHomeContainer = {
   justifyContent: "center",
   alignItems: "center",
   zIndex: 0,
-  gap: "60vh",
+  gap: "35vh",
   mx: "10vw",
-  pt: "20vh",
+  py: "20vh",
 
   [theme.breakpoints.down("xl")]: {
     mx: "10vw",
@@ -224,7 +433,7 @@ export const sxHomeHeadshot = {
   width: '280px',
   display: "flex",
   alignItems: "center",
-
+  boxShadow: 6,
 }
 
 export const sxJackTextContainer = {
@@ -237,11 +446,18 @@ export const sxJackTextContainer = {
 };
 
 export const sxImageAndDesignerText = {
-    // border: "1px solid red",
-    display: "flex",
-    flexDirection: "row",
-    // justifyContent: "center",
-    gap: 8,
+  // border: "2px solid red",
+  display: "flex",
+  flexDirection: "row",
+  // justifyContent: "center",
+  gap: 8,
+}
+
+export const sxPhotoToolTip = {
+  color: "primary.main",
+  bgcolor: "blue",
+  height: "100px",
+
 }
 
 export const sxDesignerDeveloperText = {
@@ -250,11 +466,27 @@ export const sxDesignerDeveloperText = {
   flexDirection: "column",
   justifyContent: "center",
   gap: 1,
+  color: "info.light",
+
 }
 
 export const sxDoingNowContainer = {
+  // border: "1px solid blue",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: 4,
   color: "info.light",
+  width: "100%",
+
 };
+
+export const sxExperienceText = {
+  fontWeight: "bold",
+  textAlign: "center",
+  // mb: -2,
+}
 
 export const sxHomeHeroText = {
   fontSize: "5rem",
@@ -298,7 +530,7 @@ export const sxH3 = {
 // ----- Nav ----- //
 // ----- Nav ----- //
 export const sxNavContainer = {
-  //   border: '1px solid blue',
+  // border: '2px solid red',
   display: "flex",
   flexDirection: "column",
   position: "fixed",
@@ -313,12 +545,12 @@ export const sxNavContent = {
   justifyContent: "space-between",
   alignItems: "center",
   //   mt: "2vh",
-  py: "2vh",
+  py: "1vh",
   px: "2vw",
   bgcolor: "info.light",
-  boxShadow: 3,
-  borderBottomLeftRadius: "2vh",
-  borderBottomRightRadius: "2vh",
+  boxShadow: 4,
+  borderBottomLeftRadius: "1vh",
+  borderBottomRightRadius: "1vh",
   zIndex: 5000,
 };
 
@@ -411,13 +643,21 @@ export const sxNavTextCreative = {
 // ----- Pill  ----- //
 // ----- Pill  ----- //
 export const sxPillContainer = {
-  // border: "1px solid red",
+  // border: "1px solid blue",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  gap: "5vh",
-  width: "100%",
+  gap: 2,
+  // width: "100%",
+  px: 6,
+  py: 3,
+  borderRadius: 10,
+  color: "primary.main",
+  bgcolor: "info.light",
+  boxShadow: 8,
+
+
 };
 
 export const sxPillContainerText = {
@@ -450,6 +690,269 @@ export const sxPillContent = {
 // ----- Pill  ----- //
 // ----- Pill  ----- //
 
+// ----- Project  ----- //
+// ----- Project  ----- //
+// ----- Project  ----- //
+
+export const sxProjectContent = {
+  // border: "1px solid blue",
+  cursor: "pointer",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  borderRadius: "2vw",
+  py: "1.5vh",
+  px: "2.5vh",
+  textAlign: "center",
+  bgcolor: "info.light",
+  boxShadow: 6,
+  color: "info.dark",
+  gap: 1,
+  // width: "50%",
+
+  "&:hover": {
+    color: "primary.main",
+    // transform: "scale(1.05)",
+    boxShadow: 12,
+  },
+};
+
+export const sxProjectContainer = {
+  // border: '1px solid yellow',
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: 2,
+  // mt: 10,
+
+};
+
+export const sxCardProjectGallery = {
+  // border: '1px solid blue',
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  flexWrap: "wrap",
+  gap: 3,
+  // borderBottom: 1,
+  // borderColor: "primary.light",
+  pb: 5,
+  mx: 8,
+
+  [theme.breakpoints.down("xl")]: {
+    mx: 8,
+  },
+  [theme.breakpoints.down("lg")]: {
+    mx: 8,
+  },
+  [theme.breakpoints.down("md")]: {
+    mx: 5,
+  },
+  [theme.breakpoints.down("sm")]: {
+    mx: 3,
+  },
+}
+
+export const sxProjectImageTextHeader = {
+  // border: "1px solid blue",
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: 2,
+ 
+}
+
+export const sxProductImage = {
+  // border: "1px solid red",
+  borderRadius: "50%",
+  height: '5rem',
+  width: '5rem',
+  display: "flex",
+  alignItems: "center",
+  boxShadow: 2,
+  objectFit: "cover",
+
+};
+
+export const sxProjectHeaderDetails = {
+  // border: "1px solid green",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "start",
+  justifyContent: "center",
+}
+
+export const sxImageList = {
+  // border: '2px solid green',
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  flexWrap: "wrap",
+  boxShadow: 2,
+
+}
+
+export const sxProjectImage = {
+  // border: '2px solid blue',
+  cursor: "pointer",
+  objectFit: "contain",
+
+  // display: "flex",
+  // flexDirection: "row",
+  // justifyContent: "center",
+  // flexWrap: "wrap",
+  // width: "50%",
+  // height: "50%",
+}
+
+// ----- Project  ----- //
+// ----- Project  ----- //
+// ----- Project  ----- //
+
+// ----- ProductCard --- //
+// ----- ProductCard --- //
+// ----- ProductCard --- //
+export const sxProductImageContent = {
+  cursor: "pointer",
+  display: "flex",
+  flexDirection: "column",
+
+  "&:hover": {
+    color: "primary.light",
+    transform: "scale(1.025)",
+  },
+  "&:active": {
+    color: "primary.light",
+    transform: "scale(1.05)",
+  },
+
+};
+
+export const sxCardProduct = {
+  width: "20rem",
+  height: "26.9rem",
+  mb: 1,
+  borderRadius: 2,
+};
+
+export const sxImageCaption = {
+  color: "info.light",
+  width: "20rem",
+};
+
+// ----- ProductCard --- //
+// ----- ProductCard --- //
+// ----- ProductCard --- //
+
+// ----- WorkDescription ----- //
+// ----- WorkDescription ----- //
+// ----- WorkDescription ----- //
+
+export const sxWorkDescriptionTitle = {
+  // border: '1px solid red',
+  display: "flex",
+  justifyContent: "center",
+  textAlign: "center",
+  px: 8,
+  py: 1.5,
+  color: "info.light",
+
+  [theme.breakpoints.down("xl")]: {
+    px: 8,
+  },
+  [theme.breakpoints.down("lg")]: {
+    px: 8,
+  },
+  [theme.breakpoints.down("md")]: {
+    px: 5,
+  },
+  [theme.breakpoints.down("sm")]: {
+    px: 3,
+  },
+};
+
+export const sxWorkDescriptionContent = {
+  // border: '1px solid red',
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: 1,
+  color: "info.light",
+  px: 8,
+
+  [theme.breakpoints.down("xl")]: {
+    px: 8,
+  },
+  [theme.breakpoints.down("lg")]: {
+    px: 8,
+  },
+  [theme.breakpoints.down("md")]: {
+    px: 5,
+  },
+  [theme.breakpoints.down("sm")]: {
+    px: 3,
+    textAlign: "center",
+  },
+};
+// ----- WorkDescription ----- //
+// ----- WorkDescription ----- //
+// ----- WorkDescription ----- //
+
+// ----- ProjectDescription ----- //
+// ----- ProjectDescription ----- //
+// ----- ProjectDescription ----- //
+export const sxProjectDescriptionTitle = {
+  // border: '1px solid red',
+  display: "flex",
+  justifyContent: "center",
+  textAlign: "center",
+  px: 8,
+  py: 1.5,
+  color: "info.light",
+
+  [theme.breakpoints.down("xl")]: {
+    px: 8,
+  },
+  [theme.breakpoints.down("lg")]: {
+    px: 8,
+  },
+  [theme.breakpoints.down("md")]: {
+    px: 5,
+  },
+  [theme.breakpoints.down("sm")]: {
+    px: 3,
+  },
+};
+
+export const sxProjectDescriptionContent = {
+  // border: '1px solid red',
+  display: "flex",
+  flexDirection: "column",
+  gap: 1,
+  color: "info.light",
+  px: 8,
+
+  [theme.breakpoints.down("xl")]: {
+    px: 8,
+  },
+  [theme.breakpoints.down("lg")]: {
+    px: 8,
+  },
+  [theme.breakpoints.down("md")]: {
+    px: 5,
+  },
+  [theme.breakpoints.down("sm")]: {
+    px: 3,
+    textAlign: "center",
+  },
+};
+// ----- ProjectDescription ----- //
+// ----- ProjectDescription ----- //
+// ----- ProjectDescription ----- //
+
 // ----- RandomEmoji ----- //
 // ----- RandomEmoji ----- //
 // ----- RandomEmoji ----- //
@@ -469,14 +972,28 @@ export const sxEmojiContainer = {
 // ----- Work ----- //
 // ----- Work ----- //
 export const sxWorkContainer = {
-  border: "1px solid blue",
-  pt: "40vh",
+  // border: "1px solid blue",
+  // pt: "40vh",
+  // display: "flex",
+  // flexDirection: "column",
+  // alignItems: "center",
+  // gap: 2,
   display: "flex",
   flexDirection: "column",
+  justifyContent: "center",
   alignItems: "center",
-  gap: 2,
+  gap: 10,
+  mt: 10,
 
 };
+
+// export const sxProjectDescription = {
+//   border: "1px solid blue",
+//   fontWeight: "bold",
+
+// }
+
+
 // ----- Work ----- //
 // ----- Work ----- //
 // ----- Work ----- //

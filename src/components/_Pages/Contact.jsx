@@ -71,19 +71,19 @@ function Contact() {
 
         <Box sx={sxContactSubText}>
           <Typography sx={sxHomeHeroText} variant="h1">
-            tldr
+            tldr:
           </Typography>
 
           <Typography variant="h6">Minneapolis livin</Typography>
 
-          <Typography variant="h6">Designer and builder of things</Typography>
+          <Typography variant="h6">Designer, tinkerer, and builder of things</Typography>
 
           <Typography variant="h6">
-            Living life between the physical and the digital world
+            Experiencing life between the physical and the digital world
           </Typography>
 
           <Typography variant="h6">
-            I have a vast set of skills and enjoy taking on creative challenges
+            I have a vast set of skills and enjoy bringing ideas to life to solve a problem
           </Typography>
         </Box>
       </Box>

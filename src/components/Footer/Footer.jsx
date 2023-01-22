@@ -22,7 +22,7 @@ function Footer() {
 
   return (
     <Box id="Footer" sx={sxFooter}>
-      <Typography variant="body2">Eric Meinzer 2022 | Designer & Developer | Minneapolis, MN</Typography>
+      <Typography variant="body2">Eric Meinzer 2023 | Designer & Developer | Minneapolis, MN</Typography>
     </Box>
   );
 }

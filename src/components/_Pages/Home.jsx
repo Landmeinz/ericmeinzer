@@ -7,6 +7,8 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 // --- Components --- //
 import Pill from "../Pill/Pill";
+import ToolTipDisplay from "../ToolTipDisplay/ToolTipDisplay";
+import Experience from "../Experience/Experience";
 
 // --- MUI --- //
 import { Typography, Box, CardMedia } from "@mui/material";
@@ -27,9 +29,16 @@ import {
   sxDoingNowContainer,
   sxHomeHeroText,
   sxH3,
+  sxPhotoToolTip,
+  sxExperienceText
+
 } from "../App/App.sxStyles";
 
 function Home() {
+
+  const displayMessage = `they say a jack of all trades is a master of none,
+  but more often better than a master of one`;
+
   return (
     <motion.div
       initial={trans.initial}
@@ -48,54 +57,68 @@ function Home() {
         <meta name="author" content="ericmeinzer.com, eric, meinzer" />
       </Helmet>
 
-      <Box id="HomeContainer" sx={sxHomeContainer}>
-        <Box id="JackTextContainer" sx={sxJackTextContainer}>
+      <Box id="homeContainer" sx={sxHomeContainer}>
+        <Box id="jackTextContainer" sx={sxJackTextContainer}>
           <Box sx={sxImageAndDesignerText}>
-          <CardMedia
-            sx={sxHomeHeadshot}
-            component="img"
-            alt="A Nice Headshot Photo of Eric"
-            image="/images/EM.jpg"
-          />
-          <Box sx={sxDesignerDeveloperText}>
-          <Typography sx={sxHomeHeroText} variant="h1">
-            Designer &
-          </Typography>
-          <Typography sx={sxHomeHeroText} variant="h1">
-            Developer
-          </Typography>
+
+            <ToolTipDisplay content={displayMessage} direction="right">
+              <Box>
+
+                <CardMedia
+                  sx={sxHomeHeadshot}
+                  component="img"
+                  alt="A Nice Headshot Photo of Eric"
+                  image="/images/EM.jpg"
+                />
+              </Box>
+            </ToolTipDisplay>
+
+            <Box id="designerDeveloperText" sx={sxDesignerDeveloperText}>
+              <Typography sx={sxHomeHeroText} variant="h1">
+                Designer &
+              </Typography>
+              <Typography sx={sxHomeHeroText} variant="h1">
+                Developer
+              </Typography>
+            </Box>
+
           </Box>
-       
-          </Box>
-       
-          <Typography sx={sxH3} variant="h3">
+
+          {/* <Typography sx={sxH3} variant="h3">
             they say a jack of all trades is a master of none
           </Typography>
           <Typography sx={sxH3} variant="h3">
             but more often better than a master of one
-          </Typography>
+          </Typography> */}
         </Box>
 
         {/* --- pill layers ---*/}
-        <Box sx={sxPillContainer}>
-          <Typography sx={sxH3} variant="h3">
-            I've done a lot of different things over the years
+        <Box id="pillContainer" sx={sxPillContainer}>
+          <Typography sx={sxHomeHeroText} variant="h1">
+            I Help Bring
           </Typography>
-          <Box sx={sxPillContainerText}>
+          <Typography sx={sxHomeHeroText} variant="h1">
+            Ideas Together
+          </Typography>
+          <Typography sx={sxHomeHeroText} variant="h1">
+            With Design & Code
+          </Typography>
+          {/* <Box sx={sxPillContainerText}>
             <Pill text={"Lighting Design"} />
             <Pill text={"Rendering"} />
             <Pill text={"Graphic Design"} />
             <Pill text={"Product Design"} />
             <Pill text={"Architecture"} />
-          </Box>
+          </Box> */}
         </Box>
 
-        <Box sx={sxDoingNowContainer}>
-          <Typography sx={{ fontWeight: "bold" }} variant="h3">
-            Designing & Developing Software
+        <Box id="doingNowContainer" sx={sxDoingNowContainer}>
+          <Typography sx={sxExperienceText} variant="h3">
+            Places I've Worked
           </Typography>
-          <Typography variant="h4">as a Full Stack Developer</Typography>
-          <Pill text={"View My Work"} />
+          {/* <Typography variant="h5">Full Stack Software Engineer with a Bachelor of Science in Design</Typography> */}
+          <Experience />
+          {/* <Pill text={"View My Work"} /> */}
         </Box>
       </Box>
     </motion.div>
