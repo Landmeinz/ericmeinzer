@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 // --- Parallax --- //
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
@@ -25,19 +26,28 @@ import {
   sxBackgroundImage,
   sxHistoryTextContainer,
   sxPillContainer,
+  sxPillCard,
   sxPillContainerText,
   sxDoingNowContainer,
   sxHomeHeroText,
   sxH3,
   sxPhotoToolTip,
-  sxExperienceText
+  sxExperienceText,
+  sxViewCreations,
+
 
 } from "../App/App.sxStyles";
 
 function Home() {
+  const navigate = useNavigate();
 
   const displayMessage = `they say a jack of all trades is a master of none,
   but more often better than a master of one`;
+
+  function handleClick() {
+    navigate("/work");
+    window.scrollTo(0, 0);
+  }
 
   return (
     <motion.div
@@ -94,15 +104,21 @@ function Home() {
 
         {/* --- pill layers ---*/}
         <Box id="pillContainer" sx={sxPillContainer}>
-          <Typography sx={sxHomeHeroText} variant="h1">
-            I Help Bring
+          <Typography color="info.light" sx={sxExperienceText} variant="h3">
+            🤖 What Is My Purpose?
           </Typography>
-          <Typography sx={sxHomeHeroText} variant="h1">
-            Ideas Together
-          </Typography>
-          <Typography sx={sxHomeHeroText} variant="h1">
-            With Design & Code
-          </Typography>
+          <Box id="pillCard" sx={sxPillCard}>
+            <Typography sx={sxHomeHeroText} variant="h1">
+              To Help Bring
+            </Typography>
+            <Typography sx={sxHomeHeroText} variant="h1">
+              Ideas Together
+            </Typography>
+            <Typography sx={sxHomeHeroText} variant="h1">
+              With Design & Code
+            </Typography>
+          </Box>
+
           {/* <Box sx={sxPillContainerText}>
             <Pill text={"Lighting Design"} />
             <Pill text={"Rendering"} />
@@ -120,6 +136,18 @@ function Home() {
           <Experience />
           {/* <Pill text={"View My Work"} /> */}
         </Box>
+
+        <Box sx={sxViewCreations}>
+          <Typography
+            sx={sxExperienceText}
+            variant="h3"
+            onClick={() => handleClick()}
+          >
+            Click Here To View Work
+          </Typography>
+        </Box>
+
+
       </Box>
     </motion.div>
   );

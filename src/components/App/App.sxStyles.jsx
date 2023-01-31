@@ -27,7 +27,7 @@ export const theme = createTheme({
   palette: {
     primary: {
       main: "hsla(360, 60%, 40%, 1)",
-        dark: "hsla(360, 60%, 18%, 1)",
+      dark: "hsla(360, 60%, 18%, 1)",
       //   light: "hsla(14, 77%, 56%, 1)",
     },
     secondary: {
@@ -168,7 +168,7 @@ export const sxContactContainer = {
   mx: "10vw",
   pt: "40vh",
   color: "info.light",
-  
+
 };
 
 export const sxContactHeader = {
@@ -265,7 +265,7 @@ export const sxImageTextHeader = {
   alignItems: "center",
   justifyContent: "center",
   gap: 2,
- 
+
 }
 
 export const sxExpHeaderDetails = {
@@ -409,9 +409,9 @@ export const sxHomeContainer = {
   justifyContent: "center",
   alignItems: "center",
   zIndex: 0,
-  gap: "35vh",
-  mx: "10vw",
-  py: "20vh",
+  gap: 34,
+  mx: 10,
+  py: 20,
 
   [theme.breakpoints.down("xl")]: {
     mx: "10vw",
@@ -486,6 +486,26 @@ export const sxExperienceText = {
   fontWeight: "bold",
   textAlign: "center",
   // mb: -2,
+}
+
+export const sxViewCreations = {
+  color: "primary.main",
+  textAlign: "center",
+  cursor: "pointer",
+  // border: 5,
+  boxShadow: 6,
+  p: 3,
+  borderRadius: 6,
+  // borderColor: "info.dark",
+  bgcolor: "info.light",
+
+
+
+  "&:hover": {
+    color: "primary.light",
+    transform: "scale(1.05)",
+  },
+
 }
 
 export const sxHomeHeroText = {
@@ -577,6 +597,7 @@ export const sxNameContainer = {
 };
 
 export const sxWorkContactContainer = {
+  // border: "1px solid red",
   display: "flex",
   flexDirection: "row",
   justifyContent: "center",
@@ -643,6 +664,24 @@ export const sxNavTextCreative = {
 // ----- Pill  ----- //
 // ----- Pill  ----- //
 export const sxPillContainer = {
+  // border: "1px solid blue",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: 2,
+  // width: "100%",
+  // px: 6,
+  // py: 3,
+  // borderRadius: 10,
+  // color: "primary.main",
+  // bgcolor: "info.light",
+  // boxShadow: 8,
+
+
+};
+
+export const sxPillCard = {
   // border: "1px solid blue",
   display: "flex",
   flexDirection: "column",
@@ -761,7 +800,7 @@ export const sxProjectImageTextHeader = {
   alignItems: "center",
   justifyContent: "center",
   gap: 2,
- 
+
 }
 
 export const sxProductImage = {
@@ -972,20 +1011,97 @@ export const sxEmojiContainer = {
 // ----- Work ----- //
 // ----- Work ----- //
 export const sxWorkContainer = {
-  // border: "1px solid blue",
-  // pt: "40vh",
-  // display: "flex",
-  // flexDirection: "column",
-  // alignItems: "center",
-  // gap: 2,
+  border: "1px solid blue",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  gap: 10,
-  mt: 10,
+  gap: 34,
+  mx: 10,
+  py: 20,
 
 };
+
+export const sxWorkHeader = {
+  border: "1px solid green",
+  // display: "flex",
+  // flexDirection: "column",
+  // justifyContent: "center",
+  // alignItems: "center",
+  // gap: 2,
+  // color: "info.light",
+
+}
+
+export const sxWorkHeroText = {
+  // border: "1px solid green",
+  fontSize: "5rem",
+  fontWeight: "bold",
+  color: "info.light",
+
+  [theme.breakpoints.down("xl")]: {
+    fontSize: "5rem",
+  },
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "4rem",
+  },
+  [theme.breakpoints.down("md")]: {
+    fontSize: "3rem",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "3rem",
+  },
+}
+
+export const sxProjectsContainer = {
+  border: "1px solid green",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: 6,
+
+}
+
+export const sxLisProjectsContainer = {
+  border: "1px solid yellow",
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: 4,
+
+}
+
+export const sxListProjects = {
+  border: "1px solid red",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  // alignItems: "center",
+  gap: 1,
+}
+
+
+
+export const sxProjectsHeaderText = {
+  // fontSize: "2rem",
+  fontWeight: "bold",
+  color: "info.light",
+
+  [theme.breakpoints.down("xl")]: {
+    fontSize: "1.5rem",
+  },
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "1.5rem",
+  },
+  [theme.breakpoints.down("md")]: {
+    fontSize: "1rem",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "1rem",
+  },
+}
 
 // export const sxProjectDescription = {
 //   border: "1px solid blue",

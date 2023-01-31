@@ -16,6 +16,10 @@ import {
 } from "@mui/material";
 
 import {
+  projects,
+} from "../../content/Projects";
+
+import {
   sxProjectContainer,
   sxCardProjectGallery,
   sxProjectImage,
@@ -34,7 +38,7 @@ import {
 
 } from "../App/App.sxStyles";
 
-function Project({ projects }) {
+function Project() {
 
   projects?.content.sort((a, b) => 0.5 - Math.random());
 
@@ -55,7 +59,7 @@ function Project({ projects }) {
                     sx={sxProductImage}
                     component="img"
                     alt={item.alt}
-                    image={item.image}
+                    image={item.thumbnail}
                   />
                   <Box id="expHeaderDetails" sx={sxProjectHeaderDetails}>
                     <Typography variant="h5">{item.caption}</Typography>

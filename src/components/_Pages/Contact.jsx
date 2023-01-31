@@ -79,12 +79,12 @@ function Contact() {
           <Typography variant="h6">Designer, tinkerer, and builder of things</Typography>
 
           <Typography variant="h6">
-            Experiencing life between the physical and the digital world
+            Experiencing life between the physical & digital world
           </Typography>
 
-          <Typography variant="h6">
-            I have a vast set of skills and enjoy bringing ideas to life to solve a problem
-          </Typography>
+          {/* <Typography variant="h6">
+            I have a vast set of skills and enjoy bringing ideas to life to problems
+          </Typography> */}
         </Box>
       </Box>
     </motion.div>
