@@ -1,40 +1,32 @@
 import React from "react";
 
 // --- Components --- //
-import ProjectCard from "../ProductCard/ProductCard";
-import ProjectDescription from "../WorkDescription/WorkDescription";
+
+// --- Content --- //
+import {
+  projects,
+} from "../../content/Projects";
 
 // --- MUI --- //
 import {
-  // Typography,
-  // CardMedia,
   Box,
   ImageList,
   ImageListItem,
   Typography,
   CardMedia,
-} from "@mui/material";
 
-import {
-  projects,
-} from "../../content/Projects";
+} from "@mui/material";
 
 import {
   sxProjectContainer,
   sxCardProjectGallery,
-  sxProjectImage,
   sxImageList,
-  sxExperienceContent,
-  sxImageTextHeader,
-  sxExperienceImage,
-  sxExpHeaderDetails,
-
   sxProjectContent,
   sxProjectImageTextHeader,
   sxProjectHeaderDetails,
   sxProductImage,
-
-
+  sxProjectHeaderText,
+  sxProjectLocationText,
 
 } from "../App/App.sxStyles";
 
@@ -54,16 +46,21 @@ function Project() {
           {projects?.content.map((item) => (
             <ImageListItem key={item.id}>
               <Box id="projectContent" sx={sxProjectContent}>
-                <Box id="imageTextHeader" sx={sxProjectImageTextHeader} onClick={() => handleClick(item.image)}>
+                <Box
+                  id="imageTextHeader"
+                  sx={sxProjectImageTextHeader}
+                  onClick={() => handleClick(item.image)}>
                   <CardMedia
                     sx={sxProductImage}
                     component="img"
                     alt={item.alt}
                     image={item.thumbnail}
                   />
-                  <Box id="expHeaderDetails" sx={sxProjectHeaderDetails}>
-                    <Typography variant="h5">{item.caption}</Typography>
-                    <Typography variant="body1">{item.date}</Typography>
+                  <Box
+                    id="expHeaderDetails"
+                    sx={sxProjectHeaderDetails}>
+                    <Typography sx={sxProjectHeaderText} variant="h5">{item.caption}</Typography>
+                    <Typography sx={sxProjectLocationText} variant="body1">{item.date}</Typography>
                   </Box>
                 </Box>
               </Box>

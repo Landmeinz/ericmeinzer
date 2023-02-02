@@ -1,16 +1,15 @@
 import React from "react";
 
 // --- Components --- //
-import ProjectCard from "../ProductCard/ProductCard";
-import ProjectDescription from "../WorkDescription/WorkDescription";
+
+// --- Content --- //
+import {
+  featured,
+} from "../../content/Projects";
 
 // --- MUI --- //
 import {
-  // Typography,
-  // CardMedia,
   Box,
-  ImageList,
-  ImageListItem,
   Typography,
   CardMedia,
 } from "@mui/material";
@@ -19,11 +18,10 @@ import {
   sxFeaturedContainer,
   sxCardFeaturedGallery,
   sxFeaturedImage,
-  sxImageList,
+
 } from "../App/App.sxStyles";
 
-function Featured({ featured }) {
-
+function Featured() {
   function handleClick(url, image){
     console.log('handle open in new tab');
     if (url == null) {
@@ -35,7 +33,7 @@ function Featured({ featured }) {
   return (
     <Box id="featuredContainer" sx={sxFeaturedContainer}>
       <Box id="cardFeaturedGallery" sx={sxCardFeaturedGallery}>
-          {featured.content.map((item) => (
+          {featured?.content.map((item) => (
             <Box key={item.id}>
               <CardMedia
                 sx={sxFeaturedImage}
@@ -45,15 +43,8 @@ function Featured({ featured }) {
                 image={`${item.image}`}
                 loading="lazy"
                 onClick={() => handleClick(item.url, item.image)}
-                // srcSet={`${item.image}?w=248&fit=crop&auto=format&dpr=2 2x`}
               ></CardMedia>
               <Typography color="info.light" variant="body1">{item.caption}</Typography>
-              {/* <img
-                src={`${item.image}?w=248&fit=crop&auto=format`}
-                srcSet={`${item.image}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.alt}
-                loading="lazy"
-              /> */}
             </Box>
           ))}
       </Box>

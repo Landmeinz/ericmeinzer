@@ -14,7 +14,6 @@ import {
 import {
     sxWorkDescriptionTitle,
     sxWorkDescriptionContent,
-    sxBreaksH4,
     sxBreaksH5,
 
 } from '../App/App.sxStyles';

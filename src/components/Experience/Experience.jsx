@@ -1,6 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 
 // --- Components --- //
 
@@ -9,25 +7,15 @@ import { Typography, Box, CardMedia } from "@mui/material";
 
 // --- Sx Styles --- //
 import {
-    sxPillContent,
     sxExperienceContent,
     sxExperienceImage,
     sxExperienceContainer,
     sxImageTextHeader,
     sxExpHeaderDetails,
-    sxExperienceDetails,
-    sxBody1,
-
 
 } from "../App/App.sxStyles";
 
 function Experience(props) {
-    const navigate = useNavigate();
-
-    function handleNav(path) {
-        navigate(path);
-        window.scrollTo(0, 0);
-    } // handleNav
 
     function handleClick(input) {
         console.log('clicked');

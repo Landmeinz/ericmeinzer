@@ -19,7 +19,7 @@ import Footer from "../Footer/Footer";
 import Work from "../_Pages/Work";
 
 // --- MUI --- //
-import { Box, CardMedia } from "@mui/material";
+import { Box } from "@mui/material";
 
 // --- Sx Styles --- //
 import {
@@ -27,9 +27,9 @@ import {
   transApp,
   sxApp,
   sxAppContainer,
-  sxBackgroundImage,
+
 } from "./App.sxStyles";
-import "./App.css";
+
 
 function App() {
   return (
@@ -77,5 +77,4 @@ function App() {
     </ThemeProvider>
   );
 }
-
 export default App;

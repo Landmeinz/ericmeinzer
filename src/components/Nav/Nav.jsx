@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
@@ -18,16 +18,14 @@ import {
   sxNavContent,
   sxNameContainer,
   sxNavText,
-  sxNavSubText,
   sxNavTextCreative,
   sxWorkContactContainer,
+
 } from "../App/App.sxStyles";
 
 function Nav() {
   const navigate = useNavigate();
   const [emojiList, setEmojiList] = useState([]);
-
-  useEffect(() => {}, []); //No dependency to trigger in each page load
 
   function handleNav(path) {
     navigate(path);

@@ -4,10 +4,9 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 // --- Parallax --- //
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+// import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 // --- Components --- //
-import Pill from "../Pill/Pill";
 import ToolTipDisplay from "../ToolTipDisplay/ToolTipDisplay";
 import Experience from "../Experience/Experience";
 
@@ -16,25 +15,19 @@ import { Typography, Box, CardMedia } from "@mui/material";
 
 // --- Sx Styles --- //
 import {
-  theme,
   trans,
   sxHomeContainer,
   sxHomeHeadshot,
-  sxJackTextContainer,
+  sxDandDContainer,
   sxImageAndDesignerText,
   sxDesignerDeveloperText,
-  sxBackgroundImage,
-  sxHistoryTextContainer,
-  sxPillContainer,
-  sxPillCard,
-  sxPillContainerText,
   sxDoingNowContainer,
   sxHomeHeroText,
-  sxH3,
-  sxPhotoToolTip,
-  sxExperienceText,
   sxViewCreations,
-
+  sxPurposeContainer,
+  sxPurposeText,
+  sxHomePurposeText,
+  sxPurposeCard,
 
 } from "../App/App.sxStyles";
 
@@ -61,19 +54,20 @@ function Home() {
         <title>Eric Meinzer | Home</title>
         <meta
           name="description"
-          content="general information about eric meinzer and a website to view his work."
-        />
-        <meta name="keywords" content="personal website, " />
-        <meta name="author" content="ericmeinzer.com, eric, meinzer" />
+          content="Eric Meinzer's website, designer and developer, code" />
+        <meta
+          name="keywords"
+          content="personal website, work, design, architecture, graphic design, branding" />
+        <meta
+          name="author"
+          content="ericmeinzer.com, eric, meinzer, Eric Meinzer" />
       </Helmet>
 
       <Box id="homeContainer" sx={sxHomeContainer}>
-        <Box id="jackTextContainer" sx={sxJackTextContainer}>
+        <Box id="jackTextContainer" sx={sxDandDContainer}>
           <Box sx={sxImageAndDesignerText}>
-
             <ToolTipDisplay content={displayMessage} direction="right">
               <Box>
-
                 <CardMedia
                   sx={sxHomeHeadshot}
                   component="img"
@@ -91,63 +85,42 @@ function Home() {
                 Developer
               </Typography>
             </Box>
-
           </Box>
-
-          {/* <Typography sx={sxH3} variant="h3">
-            they say a jack of all trades is a master of none
-          </Typography>
-          <Typography sx={sxH3} variant="h3">
-            but more often better than a master of one
-          </Typography> */}
         </Box>
 
-        {/* --- pill layers ---*/}
-        <Box id="pillContainer" sx={sxPillContainer}>
-          <Typography color="info.light" sx={sxExperienceText} variant="h3">
+        <Box id="purposeContainer" sx={sxPurposeContainer}>
+          <Typography color="info.light" sx={sxPurposeText} variant="h3">
             🤖 What Is My Purpose?
           </Typography>
-          <Box id="pillCard" sx={sxPillCard}>
-            <Typography sx={sxHomeHeroText} variant="h1">
+          <Box id="purposeCard" sx={sxPurposeCard}>
+            <Typography sx={sxHomePurposeText} variant="h2">
               To Help Bring
             </Typography>
-            <Typography sx={sxHomeHeroText} variant="h1">
+            <Typography sx={sxHomePurposeText} variant="h2">
               Ideas Together
             </Typography>
-            <Typography sx={sxHomeHeroText} variant="h1">
+            <Typography sx={sxHomePurposeText} variant="h2">
               With Design & Code
             </Typography>
           </Box>
-
-          {/* <Box sx={sxPillContainerText}>
-            <Pill text={"Lighting Design"} />
-            <Pill text={"Rendering"} />
-            <Pill text={"Graphic Design"} />
-            <Pill text={"Product Design"} />
-            <Pill text={"Architecture"} />
-          </Box> */}
         </Box>
 
         <Box id="doingNowContainer" sx={sxDoingNowContainer}>
-          <Typography sx={sxExperienceText} variant="h3">
+          <Typography sx={sxPurposeText} variant="h3">
             Places I've Worked
           </Typography>
-          {/* <Typography variant="h5">Full Stack Software Engineer with a Bachelor of Science in Design</Typography> */}
           <Experience />
-          {/* <Pill text={"View My Work"} /> */}
         </Box>
 
-        <Box sx={sxViewCreations}>
+        <Box id="viewCreations" sx={sxViewCreations}>
           <Typography
-            sx={sxExperienceText}
+            sx={sxPurposeText}
             variant="h3"
             onClick={() => handleClick()}
           >
-            Click Here To View Work
+            View Some Work
           </Typography>
         </Box>
-
-
       </Box>
     </motion.div>
   );

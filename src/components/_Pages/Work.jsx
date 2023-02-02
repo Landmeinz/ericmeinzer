@@ -3,48 +3,35 @@ import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 
 // --- Parallax --- //
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+// import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 // --- Components --- //
-import Pill from "../Pill/Pill";
 import Project from "../Project/Project";
-import WorkDescription from "../WorkDescription/WorkDescription";
 import Featured from "../Featured/Featured";
 
 // --- MUI --- //
-import { Typography, Box, CardMedia } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 
 // --- Content --- //
-import {
-  projects,
-  workPage,
-  featured,
-  projectSection,
-
-  // other,
-} from "../../content/Projects";
 
 // --- Sx Styles --- //
 import {
-  theme,
   trans,
   sxWorkContainer,
-  sxH3,
-  sxCardProjectGallery,
-  sxProjectDescription,
-  sxHomeHeroText,
   sxWorkHeader,
   sxWorkHeroText,
   sxProjectsHeaderText,
   sxProjectsContainer,
   sxListProjects,
   sxLisProjectsContainer,
-
-
+  sxFocusHeaderText,
 
 } from "../App/App.sxStyles";
 
 function Home() {
+
+  const embraceText = "// Embrace The Process";
+  const createText = "// Create And Build";
 
   return (
     <motion.div
@@ -65,67 +52,55 @@ function Home() {
       </Helmet>
 
       <Box id="workContainer" sx={sxWorkContainer}>
-        {/* <Typography variant="h4">Software Development</Typography>
-        <Typography variant="h4">Lighting Design</Typography>
-        <Typography variant="h4">Renderings</Typography>
-        <Typography variant="h4">Graphic Design</Typography>
-        <Typography variant="h4">Product Design</Typography>
-        <Typography variant="h4">Under Graduate Architecture Portfolio</Typography> */}
-        <Box id="workHeader" sx={"sxWorkHeader"}>
+
+        <Box id="workHeader" sx={sxWorkHeader}>
           <Typography sx={sxWorkHeroText} variant="h1">
-            // Embrace The Process
+            {embraceText}
           </Typography>
           <Typography sx={sxWorkHeroText} variant="h1">
-            // Create And Build
+            {createText}
           </Typography>
         </Box>
 
-        {/* <WorkDescription
-          id="workDescription"
-          // title={workPage.title}
-          body={workPage.body}
-          details={workPage.details}
-        /> */}
-
-        <Box sx={sxProjectsContainer}>
-          <Typography sx={sxProjectsHeaderText} variant="h5">
-            Currently my focus is on designing and deploying applications
+        <Box id="projectsContainer-1" sx={sxProjectsContainer}>
+          <Typography sx={sxFocusHeaderText} variant="h3">
+            Currently my focus is on designing, developing, and deploying applications
           </Typography>
-          <Featured featured={featured} />
+          <Featured />
         </Box>
 
-        <Box sx={sxProjectsContainer}>
-          <Box sx={sxLisProjectsContainer}>
-            <Box sx={sxListProjects}>
-              <Typography sx={sxProjectsHeaderText} variant="h5">
-                Logos
+        <Box id="projectsConatiner-2" sx={sxProjectsContainer}>
+          <Box id="listProjectsContainer" sx={sxLisProjectsContainer}>
+            <Box id="listProjects-1" sx={sxListProjects}>
+              <Typography sx={sxProjectsHeaderText} variant="h4">
+                Branding
               </Typography>
-              <Typography sx={sxProjectsHeaderText} variant="h5">
+              <Typography sx={sxProjectsHeaderText} variant="h4">
                 Lighting Design
               </Typography>
-              <Typography sx={sxProjectsHeaderText} variant="h5">
+              <Typography sx={sxProjectsHeaderText} variant="h4">
                 Concept Renderings
               </Typography>
             </Box>
-            <Box sx={sxListProjects}>
-              <Typography sx={sxProjectsHeaderText} variant="h5">
+            <Box id="listProjects-2" sx={sxListProjects}>
+              <Typography sx={sxProjectsHeaderText} variant="h4">
                 Physical Models
               </Typography>
-              <Typography sx={sxProjectsHeaderText} variant="h5">
+              <Typography sx={sxProjectsHeaderText} variant="h4">
                 Architectural Drawings
               </Typography>
-              <Typography sx={sxProjectsHeaderText} variant="h5">
+              <Typography sx={sxProjectsHeaderText} variant="h4">
                 Web Design
               </Typography>
             </Box>
-            <Box sx={sxListProjects}>
-            <Typography sx={sxProjectsHeaderText} variant="h5">
+            <Box id="listProjects-3" sx={sxListProjects}>
+              <Typography sx={sxProjectsHeaderText} variant="h4">
                 Calligraphy
               </Typography>
-              <Typography sx={sxProjectsHeaderText} variant="h5">
+              <Typography sx={sxProjectsHeaderText} variant="h4">
                 Packaging Design
               </Typography>
-              <Typography sx={sxProjectsHeaderText} variant="h5">
+              <Typography sx={sxProjectsHeaderText} variant="h4">
                 Graphic Design
               </Typography>
             </Box>

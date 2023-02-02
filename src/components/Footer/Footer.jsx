@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 // --- Components --- //
 
@@ -8,14 +7,7 @@ import { Typography, Box } from "@mui/material";
 
 // --- Sx Styles --- //
 import {
-  trans,
-  sxContactContainer,
-  sxContactContent,
-  theme,
-  sxPillContent,
   sxFooter,
-
-
 } from "../App/App.sxStyles";
 
 function Footer() {

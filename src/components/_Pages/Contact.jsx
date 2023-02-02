@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 
 // --- Parallax --- //
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+// import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 // --- Components --- //
 
@@ -18,11 +18,11 @@ import {
   trans,
   sxContactContainer,
   sxContactContent,
-  sxHomeHeroText,
-  sxH3,
+  sxContactHeroText,
   sxContactSubText,
   sxIcon,
   sxContactHeader,
+
 } from "../App/App.sxStyles";
 
 function Contact() {
@@ -52,10 +52,9 @@ function Contact() {
         <meta name="author" content="ericmeinzer.com, eric, meinzer" />
       </Helmet>
 
-      {/* --- text layer Contact Page ---  */}
       <Box id="ContactContainer" sx={sxContactContainer}>
         <Box sx={sxContactHeader}>
-          <Typography sx={sxHomeHeroText} variant="h1">
+          <Typography sx={sxContactHeroText} variant="h1">
             Connect With Me
           </Typography>
 
@@ -70,7 +69,7 @@ function Contact() {
         </Box>
 
         <Box sx={sxContactSubText}>
-          <Typography sx={sxHomeHeroText} variant="h1">
+          <Typography sx={sxContactHeroText} variant="h1">
             tldr:
           </Typography>
 
@@ -81,10 +80,6 @@ function Contact() {
           <Typography variant="h6">
             Experiencing life between the physical & digital world
           </Typography>
-
-          {/* <Typography variant="h6">
-            I have a vast set of skills and enjoy bringing ideas to life to problems
-          </Typography> */}
         </Box>
       </Box>
     </motion.div>
