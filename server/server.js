@@ -1,9 +1,8 @@
 const express = require('express');
 require('dotenv').config();
 const app = express();
-
-const sessionMiddleware = require('./modules/session-middleware');
-app.use(sessionMiddleware);
+var session = require('express-session')
+app.use(session);
 
 // App Set //
 app.set("port", process.env.PORT || 3000);
