@@ -6,7 +6,7 @@ const sessionMiddleware = require('./modules/session-middleware');
 app.use(sessionMiddleware);
 
 // App Set //
-app.set("port", process.env.PORT || 5050);
+app.set("port", process.env.PORT || 3000);
 
 // Express only serves static assets in production
 if (process.env.NODE_ENV === "production") {
