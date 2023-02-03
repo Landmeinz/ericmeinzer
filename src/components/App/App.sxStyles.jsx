@@ -1025,7 +1025,6 @@ export const sxFocusHeaderText = {
   // border: "1px solid yellow",
   fontWeight: "bold",
   color: "info.light",
-  textAlign: "left",
   width: "80%",
   textAlign: "center",
 
