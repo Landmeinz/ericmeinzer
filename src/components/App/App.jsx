@@ -30,7 +30,6 @@ import {
 
 } from "./App.sxStyles";
 
-
 function App() {
   return (
     <ThemeProvider theme={theme}>
