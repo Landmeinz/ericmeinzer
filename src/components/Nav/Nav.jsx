@@ -23,6 +23,7 @@ import {
 
 } from "../App/App.sxStyles";
 
+
 function Nav() {
   const navigate = useNavigate();
   const [emojiList, setEmojiList] = useState([]);
