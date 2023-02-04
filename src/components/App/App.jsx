@@ -17,6 +17,7 @@ import Contact from "../_Pages/Contact";
 import Nav from "../Nav/Nav";
 import Footer from "../Footer/Footer";
 import Work from "../_Pages/Work";
+import WorkImage from "../_Pages/WorkImage";
 
 // --- MUI --- //
 import { Box } from "@mui/material";
@@ -65,6 +66,7 @@ function App() {
                   <Route path='*' exact={true}  element={<Navigate to="/home" />} />
                   <Route path="/home" element={<Home />} />
                   <Route path="/work" element={<Work />} />
+                  <Route path="/work/image" element={<WorkImage />} />
                   <Route path="/contact" element={<Contact />} />
                 </Routes>
                 <Footer />

@@ -28,7 +28,7 @@ import {
 
 } from "../App/App.sxStyles";
 
-function Home() {
+function Work() {
 
   const embraceText = "// Embrace The Process";
   const createText = "// Create And Build";
@@ -111,4 +111,4 @@ function Home() {
     </motion.div>
   );
 }
-export default Home;
+export default Work;

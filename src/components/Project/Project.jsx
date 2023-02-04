@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate, createSearchParams } from "react-router-dom";
 
 // --- Components --- //
 
@@ -32,11 +33,15 @@ import {
 
 function Project() {
 
+  const navigate = useNavigate();
+
   projects?.content.sort((a, b) => 0.5 - Math.random());
 
-  function handleClick(image) {
-    console.log('handle open in new tab');
-    window.open(image, '_blank');
+  function handleNav(item) {
+    navigate({ 
+      pathname: "/work/image", 
+      search: createSearchParams({ image: item.image, alt: item.alt}).toString() });
+    window.scrollTo(0, 0);
   }
 
   return (
@@ -49,7 +54,7 @@ function Project() {
                 <Box
                   id="imageTextHeader"
                   sx={sxProjectImageTextHeader}
-                  onClick={() => handleClick(item.image)}>
+                  onClick={() => handleNav(item)}>
                   <CardMedia
                     sx={sxProductImage}
                     component="img"
