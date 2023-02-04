@@ -30,11 +30,12 @@
     "react-scripts": "^5.0.1",
     "react-spring": "^9.5.2",
     "response-time": "^2.3.2",
+    "serve": "^14.2.0",
     "session-middleware": "^1.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node server/server.js",
+    "start": "serve -s build",
     "client": "react-scripts start",
     "server": "nodemon --watch server server/server.js",
     "build": "react-scripts build",
